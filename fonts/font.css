@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold'), local('Lato-Semibold'), url('latosemibold.woff2') format('woff2'), url('latosemibold.woff') format('woff'), url('latosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('Robotomedium.woff2') format('woff2'), url('Robotomedium.woff') format('woff'), url('Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
