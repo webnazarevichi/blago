@@ -1069,6 +1069,130 @@ img.mfp-img {
   }
 }
 
+.service-portfolio {
+  margin-left: 241px;
+  padding: 50px 0;
+}
+
+@media (max-width: 1700px) {
+  .service-portfolio {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .service-portfolio {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-portfolio {
+    padding-bottom: 0;
+  }
+}
+
+.service-portfolio__title {
+  max-width: 854px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1400px) {
+  .service-portfolio__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-portfolio__title {
+    font-size: 24px;
+  }
+}
+
+.service-portfolio__subtitle {
+  max-width: 668px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.service-portfolio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1900px) {
+  .service-portfolio__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1700px) {
+  .service-portfolio__wrapper {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .service-portfolio__wrapper {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-portfolio__wrapper {
+    gap: 10px;
+  }
+}
+
+.service-portfolio__item_img {
+  display: block;
+}
+
+.service-portfolio__item_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1900px) {
+  .service-portfolio__item_img {
+    width: calc(100%/3 - 20px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .service-portfolio__item_img {
+    width: calc(100%/3 - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-portfolio__item_img {
+    width: calc(100%/2 - 12px);
+  }
+}
+
+@media (max-width: 575px) {
+  .service-portfolio__item_img {
+    width: calc(100%/2 - 7px);
+  }
+}
+
+.service-portfolio__title-stone {
+  max-width: 1100px;
+}
+
 .specialist {
   background: url(../assets/img/index/specialist-bg.png) center center/cover no-repeat;
   padding: 90px 0;
@@ -1513,17 +1637,15 @@ img.mfp-img {
 
 @media (max-width: 768px) {
   .promo {
-    min-height: 100vh;
     background: url(../assets/img/promo-tablet.png) 60% 100%/cover no-repeat;
-    padding: 44% 0 5%;
+    height: 100vh;
+    padding-top: 25vh;
   }
 }
 
 @media (max-width: 575px) {
   .promo {
     padding: 0;
-    display: flex;
-    align-items: center;
   }
 }
 
@@ -1796,6 +1918,12 @@ img.mfp-img {
   color: #FFFFFF;
 }
 
+@media (max-width: 575px) {
+  .promo-breadcrumbs ul li {
+    font-size: 12px;
+  }
+}
+
 .promo-breadcrumbs ul li a {
   color: #FFFFFF;
 }
@@ -1865,6 +1993,219 @@ img.mfp-img {
 }
 
 .promo-service_monolith .promo-service__advantages li:last-child h2 {
+  max-width: 249px;
+}
+
+.promo-service_houses {
+  position: relative;
+  margin-left: 241px;
+  height: 692px;
+  background: url(../assets/img/promo-houses.png) center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .promo-service_houses {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_houses {
+    height: 100vh;
+  }
+}
+
+.promo-service_houses .promo-service__title {
+  max-width: 1060px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 1700px) {
+  .promo-service_houses .promo-service__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .promo-service_houses .promo-service__title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-service_houses .promo-service__title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_houses .promo-service__title {
+    font-size: clamp(28px, 8.7vw, 40px);
+  }
+}
+
+.promo-service_houses hr {
+  display: block;
+  width: 43px;
+  height: 1px;
+  background: #FFFFFF;
+  margin: 26px auto;
+}
+
+@media (max-width: 768px) {
+  .promo-service_houses hr {
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+
+.promo-service_houses h3 {
+  display: block;
+  max-width: 312px;
+  height: 26px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .promo-service_houses h3 {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_houses h3 {
+    font-size: 18px;
+  }
+}
+
+.promo-service_pavilions {
+  position: relative;
+  margin-left: 241px;
+  height: 687px;
+  background: url(../assets/img/promo-pavilions.png) center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .promo-service_pavilions {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_pavilions {
+    height: 100vh;
+  }
+}
+
+.promo-service_pavilions .promo-service__title {
+  max-width: 1040px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media (max-width: 1700px) {
+  .promo-service_pavilions .promo-service__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .promo-service_pavilions .promo-service__title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_pavilions .promo-service__title {
+    font-size: clamp(28px, 8.7vw, 40px);
+  }
+}
+
+.promo-service_pavilions .promo-service__wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.promo-service_pavilions .promo-service__advantages {
+  justify-content: flex-start;
+}
+
+.promo-service_pavilions .promo-service__advantages li:last-child h2 {
+  max-width: 249px;
+}
+
+.promo-service_natural-stone {
+  position: relative;
+  margin-left: 241px;
+  height: 686px;
+  background: url(../assets/img/promo-stone.png) center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .promo-service_natural-stone {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_natural-stone {
+    height: 100vh;
+  }
+}
+
+.promo-service_natural-stone .promo-service__title {
+  max-width: 1040px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media (max-width: 1700px) {
+  .promo-service_natural-stone .promo-service__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .promo-service_natural-stone .promo-service__title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo-service_natural-stone .promo-service__title {
+    font-size: clamp(28px, 8.7vw, 40px);
+  }
+}
+
+.promo-service_natural-stone .promo-service__wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.promo-service_natural-stone .promo-service__advantages {
+  justify-content: flex-start;
+}
+
+.promo-service_natural-stone .promo-service__advantages li:last-child h2 {
   max-width: 249px;
 }
 
@@ -3324,6 +3665,1558 @@ img.mfp-img {
 
 .monolith-info__item_10 p:last-child {
   margin-bottom: 0;
+}
+
+.houses-info {
+  margin-left: 241px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1700px) {
+  .houses-info {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .houses-info {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+
+.houses-info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .houses-info__wrapper {
+    gap: 40px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__wrapper {
+    gap: 20px;
+  }
+}
+
+.houses-info__item_1 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_1 {
+    width: 100%;
+  }
+}
+
+.houses-info__item_1 h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__item_1 h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__item_1 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__item_1 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_1 h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__item_1 h2 {
+    font-size: 24px;
+  }
+}
+
+.houses-info__item_1 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__item_1 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__item_1 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__item_1 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__item_1 p:last-child {
+  margin-bottom: 0;
+}
+
+.houses-info__item_1 li {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__item_1 li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__item_1 li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__item_1 li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_1 li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__item_1 li {
+    font-size: 16px;
+  }
+}
+
+.houses-info__item_1 li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 20px;
+  height: 17px;
+  background: url(../assets/icons/check.svg) center center/cover no-repeat;
+}
+
+.houses-info__item_2 {
+  width: 57.5%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_2 {
+    width: 100%;
+  }
+}
+
+.houses-info__item_2 img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .houses-info__item_2 img {
+    height: 410px;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__item_2 img {
+    height: 54vw;
+  }
+}
+
+.houses-info__stages {
+  max-width: 413px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 60px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__stages {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__stages {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__stages {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__stages {
+    margin-top: 50px;
+    max-width: 575px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__stages {
+    font-size: 24px;
+  }
+}
+
+.houses-info__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 60px 0;
+}
+
+@media (max-width: 991px) {
+  .houses-info__blocks {
+    margin-top: 30px;
+    gap: 30px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__blocks {
+    gap: 20px 0;
+  }
+}
+
+.houses-info__block_1 {
+  width: 57.5%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_1 {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.houses-info__block_1 img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_1 img {
+    height: 269px;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_1 img {
+    height: 40vw;
+  }
+}
+
+.houses-info__block_2 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_2 {
+    width: 100%;
+    order: 1;
+  }
+}
+
+.houses-info__block_2 h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_2 h4 {
+    font-size: 20px;
+  }
+}
+
+.houses-info__block_2 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__block_2 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__block_2 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__block_2 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_2 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_2 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__block_2 p:last-child {
+  margin-bottom: 0;
+}
+
+.houses-info__block_3 {
+  width: 57.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_3 {
+    width: 100%;
+    order: 4;
+  }
+}
+
+.houses-info__block_3 div:first-child {
+  background: url(../assets/img/services/houses-img-3.png) 100% center/cover no-repeat;
+  width: 63%;
+  height: 289px;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_3 div:first-child {
+    height: 269px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_3 div:first-child {
+    height: 40vw;
+  }
+}
+
+.houses-info__block_3 div:last-child {
+  background: url(../assets/img/services/houses-img-4.png) 100% center/cover no-repeat;
+  width: 35%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_3 div:last-child {
+    height: 269px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_3 div:last-child {
+    height: 40vw;
+  }
+}
+
+.houses-info__block_4 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_4 {
+    width: 100%;
+    order: 3;
+  }
+}
+
+.houses-info__block_4 h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_4 h4 {
+    font-size: 20px;
+  }
+}
+
+.houses-info__block_4 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__block_4 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__block_4 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__block_4 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_4 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_4 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__block_4 p:last-child {
+  margin-bottom: 0;
+}
+
+.houses-info__block_5 {
+  width: 57.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_5 {
+    width: 100%;
+    order: 6;
+  }
+}
+
+.houses-info__block_5 div:last-child {
+  background: url(../assets/img/services/houses-img-6.png) 100% center/cover no-repeat;
+  width: 63%;
+  height: 303px;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_5 div:last-child {
+    height: 300px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_5 div:last-child {
+    height: 42vw;
+  }
+}
+
+.houses-info__block_5 div:first-child {
+  background: url(../assets/img/services/houses-img-5.png) 100% center/cover no-repeat;
+  width: 35%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_5 div:first-child {
+    height: 300px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_5 div:first-child {
+    height: 42vw;
+  }
+}
+
+.houses-info__block_6 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_6 {
+    width: 100%;
+    order: 5;
+  }
+}
+
+.houses-info__block_6 h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_6 h4 {
+    font-size: 20px;
+  }
+}
+
+.houses-info__block_6 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__block_6 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__block_6 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__block_6 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_6 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_6 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__block_6 p:last-child {
+  margin-bottom: 0;
+}
+
+.houses-info__block_7 {
+  width: 57.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_7 {
+    width: 100%;
+    order: 7;
+  }
+}
+
+.houses-info__block_7 div:first-child {
+  background: url(../assets/img/services/houses-img-7.png) 100% center/cover no-repeat;
+  width: 63%;
+  height: 280px;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_7 div:first-child {
+    height: 300px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_7 div:first-child {
+    height: 42vw;
+  }
+}
+
+.houses-info__block_7 div:last-child {
+  background: url(../assets/img/services/houses-img-8.png) 100% center/cover no-repeat;
+  width: 35%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_7 div:last-child {
+    height: 300px;
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_7 div:last-child {
+    height: 42vw;
+  }
+}
+
+.houses-info__block_8 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_8 {
+    width: 100%;
+    order: 6;
+  }
+}
+
+.houses-info__block_8 h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_8 h4 {
+    font-size: 20px;
+  }
+}
+
+.houses-info__block_8 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__block_8 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__block_8 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__block_8 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_8 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_8 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__block_8 p:last-child {
+  margin-bottom: 0;
+}
+
+.houses-info__block_9 {
+  width: 57.5%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_9 {
+    width: 100%;
+    order: 10;
+  }
+}
+
+.houses-info__block_9 img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_9 img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .houses-info__block_9 img {
+    height: 42vw;
+  }
+}
+
+.houses-info__block_10 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_10 {
+    width: 100%;
+    order: 9;
+  }
+}
+
+.houses-info__block_10 h4 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_10 h4 {
+    font-size: 20px;
+  }
+}
+
+.houses-info__block_10 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .houses-info__block_10 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .houses-info__block_10 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .houses-info__block_10 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .houses-info__block_10 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .houses-info__block_10 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.houses-info__block_10 p:last-child {
+  margin-bottom: 0;
+}
+
+.pavilions-info {
+  margin-left: 241px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pavilions-info {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pavilions-info {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+
+.pavilions-info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px 0;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__wrapper {
+    gap: 70px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__wrapper {
+    gap: 40px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__wrapper {
+    gap: 20px;
+  }
+}
+
+.pavilions-info__item_1 {
+  width: 43.5%;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_1 {
+    width: 100%;
+  }
+}
+
+.pavilions-info__item_1 h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__item_1 h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info__item_1 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pavilions-info__item_1 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_1 h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__item_1 h2 {
+    font-size: 24px;
+  }
+}
+
+.pavilions-info__item_1 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info__item_1 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pavilions-info__item_1 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__item_1 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.pavilions-info__item_1 p:last-child {
+  margin-bottom: 0;
+}
+
+.pavilions-info__item_2 {
+  width: 51.5%;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_2 {
+    width: 100%;
+  }
+}
+
+.pavilions-info__item_2 img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_2 img {
+    height: 367px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pavilions-info__item_2 img {
+    height: 50vw;
+  }
+}
+
+.pavilions-info__item_3 {
+  width: 43.5%;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_3 {
+    width: 100%;
+  }
+}
+
+.pavilions-info__item_3 h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__item_3 h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info__item_3 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pavilions-info__item_3 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_3 h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__item_3 h2 {
+    font-size: 24px;
+  }
+}
+
+.pavilions-info__item_3 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__item_3 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info__item_3 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pavilions-info__item_3 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_3 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__item_3 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.pavilions-info__item_3 p:last-child {
+  margin-bottom: 0;
+}
+
+.pavilions-info__item_3 li {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+@media (max-width: 1900px) {
+  .pavilions-info__item_3 li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .pavilions-info__item_3 li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pavilions-info__item_3 li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_3 li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pavilions-info__item_3 li {
+    font-size: 16px;
+  }
+}
+
+.pavilions-info__item_3 li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 20px;
+  height: 17px;
+  background: url(../assets/icons/check.svg) center center/cover no-repeat;
+}
+
+.pavilions-info__item_4 {
+  width: 51.5%;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_4 {
+    width: 100%;
+  }
+}
+
+.pavilions-info__item_4 img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .pavilions-info__item_4 img {
+    height: 370px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pavilions-info__item_4 img {
+    height: 50vw;
+  }
+}
+
+.natural-stone-info {
+  margin-left: 241px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1700px) {
+  .natural-stone-info {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .natural-stone-info {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .natural-stone-info {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+
+.natural-stone-info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px 0;
+}
+
+@media (max-width: 1900px) {
+  .natural-stone-info__wrapper {
+    gap: 70px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__wrapper {
+    gap: 40px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__wrapper {
+    gap: 20px;
+  }
+}
+
+.natural-stone-info__item_1 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_1 {
+    width: 100%;
+  }
+}
+
+.natural-stone-info__item_1 h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1900px) {
+  .natural-stone-info__item_1 h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .natural-stone-info__item_1 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .natural-stone-info__item_1 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_1 h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__item_1 h2 {
+    font-size: 24px;
+  }
+}
+
+.natural-stone-info__item_1 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .natural-stone-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .natural-stone-info__item_1 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .natural-stone-info__item_1 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_1 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__item_1 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.natural-stone-info__item_1 p:last-child {
+  margin-bottom: 0;
+}
+
+.natural-stone-info__item_2 {
+  width: 57.5%;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_2 {
+    width: 100%;
+  }
+}
+
+.natural-stone-info__item_2 img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_2 img {
+    height: 359px;
+  }
+}
+
+@media (max-width: 768px) {
+  .natural-stone-info__item_2 img {
+    height: 50vw;
+  }
+}
+
+.natural-stone-info__item_3 {
+  width: 40%;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_3 {
+    width: 100%;
+  }
+}
+
+.natural-stone-info__item_3 h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #3A3A3A;
+}
+
+@media (max-width: 1900px) {
+  .natural-stone-info__item_3 h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .natural-stone-info__item_3 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .natural-stone-info__item_3 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_3 h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__item_3 h2 {
+    font-size: 24px;
+  }
+}
+
+.natural-stone-info__item_3 p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3A3A3A;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1900px) {
+  .natural-stone-info__item_3 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .natural-stone-info__item_3 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .natural-stone-info__item_3 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_3 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__item_3 p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.natural-stone-info__item_3 p:last-child {
+  margin-bottom: 0;
+}
+
+.natural-stone-info__item_4 {
+  width: 57.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_4 {
+    width: 100%;
+  }
+}
+
+.natural-stone-info__item_4 div:first-child {
+  background: url(../assets/img/services/stone-img2.png) 100% center/cover no-repeat;
+  width: 44.8%;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_4 div:first-child {
+    height: 410px;
+  }
+}
+
+@media (max-width: 768px) {
+  .natural-stone-info__item_4 div:first-child {
+    height: 49vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .natural-stone-info__item_4 div:first-child {
+    width: 45%;
+  }
+}
+
+.natural-stone-info__item_4 div:last-child {
+  background: url(../assets/img/services/stone-img3.png) center center/cover no-repeat;
+  width: 51.8%;
+}
+
+@media (max-width: 991px) {
+  .natural-stone-info__item_4 div:last-child {
+    height: 410px;
+  }
+}
+
+@media (max-width: 768px) {
+  .natural-stone-info__item_4 div:last-child {
+    height: 49vw;
+  }
 }
 
 .sidewalk-slider {
