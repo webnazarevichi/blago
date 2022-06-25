@@ -1639,6 +1639,7 @@ img.mfp-img {
   .promo {
     background: url(../assets/img/promo-tablet.png) 60% 100%/cover no-repeat;
     height: 100vh;
+    padding: 0;
     padding-top: 25vh;
   }
 }
@@ -2014,6 +2015,7 @@ img.mfp-img {
 @media (max-width: 575px) {
   .promo-service_houses {
     height: 100vh;
+    background: url(../assets/img/promo-houses.png) 0% center/cover no-repeat;
   }
 }
 
@@ -2095,7 +2097,7 @@ img.mfp-img {
   position: relative;
   margin-left: 241px;
   height: 687px;
-  background: url(../assets/img/promo-pavilions.png) center center/cover no-repeat;
+  background: url(../assets/img/promo-pavilions.png) 100% center/cover no-repeat;
   display: flex;
   align-items: center;
 }
@@ -2103,6 +2105,7 @@ img.mfp-img {
 @media (max-width: 1200px) {
   .promo-service_pavilions {
     margin-left: 0;
+    background: url(../assets/img/promo-pavilions.png) 75% center/cover no-repeat;
   }
 }
 
