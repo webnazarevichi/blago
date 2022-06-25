@@ -33,5 +33,11 @@ $( document ).ready(function() {
             enabled : true
         }
     });
+    $(".service-portfolio__item_img").magnificPopup({
+        type : "image",
+        gallery : {
+            enabled : true
+        }
+    });
 
 });
