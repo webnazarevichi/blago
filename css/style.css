@@ -1608,12 +1608,10 @@ img.mfp-img {
 .promo {
   position: relative;
   margin-left: 241px;
-  min-height: 100vh;
+  height: 100vh;
   background: url(../assets/img/promo.png) center center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding-top: 10vh;
-  padding-bottom: 3vh;
 }
 
 @media (max-width: 1700px) {
@@ -1639,8 +1637,16 @@ img.mfp-img {
 @media (max-width: 768px) {
   .promo {
     background: url(../assets/img/promo-tablet.png) 60% 100%/cover no-repeat;
-    min-height: 100vh;
-    padding-top: 25vh;
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .promo {
+    margin-left: 0;
+    height: auto;
+    padding: 20% 0 7%;
   }
 }
 
